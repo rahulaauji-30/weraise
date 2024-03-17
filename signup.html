@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header nav {
+  display: flex;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav li {
+  margin-right: 20px;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social-btn {
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Weraise</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Campaigns</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn">Start a campaign</a>
+    </div>
+    <div class="content">
+      <h2>Welcome!</h2>
+      <form action="/signup" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="password">Create Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+          <button type="submit">Create Account</button>
+        </div>
+      </form>
+      <p>Or Continue with</p>
+      <a href="#" class="social-btn g">G</a>
+      <p>Already have an account? <a href="#">Log In</a></p>
+    </div>
+  </div>
+</body>
+</html>
