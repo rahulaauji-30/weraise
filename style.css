@@ -171,6 +171,7 @@ body{
     border-radius: 50%;
     border-color: green;
     cursor: pointer;
+    background-color: white;
 }
 .postss{
     width: 95%;
@@ -256,7 +257,4 @@ body{
 footer{
     width: 100%;
     background-color: #009C00;
-}
-.bottom-design img{
-    border:3px solid green;
 }
